@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +37,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,6 +162,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lEcFKpqpBf76YnB91AnOja2Slj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -141,13 +174,29 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\php\Laravel-NotPaylaşım\resources" />
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.Laravel-NotPaylaşım">
+    <configuration name="Laravel-NotPaylaşım" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.Laravel-NotPaylaşım" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,17 +207,54 @@
       <option name="presentableId" value="Default" />
       <updated>1607165586120</updated>
       <workItem from="1607165587196" duration="1635000" />
-      <workItem from="1607260694942" duration="5241000" />
+      <workItem from="1607260694942" duration="5242000" />
+      <workItem from="1608381998042" duration="3204000" />
+      <workItem from="1608385281868" duration="10000" />
+      <workItem from="1608385294315" duration="297000" />
+      <workItem from="1608385595057" duration="6000" />
+      <workItem from="1608385700826" duration="11000" />
+      <workItem from="1608385858568" duration="8271000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1607269093288">
+    <state x="390" y="7" key="#PHP" timestamp="1608386633439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1607269093288" />
+    <state x="390" y="7" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1608386633439" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608388177121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608388177121" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608386007333">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608386007333" />
+    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1608391406297">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608391406297" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1608386665356">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1608386017856">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1608386017856" />
   </component>
 </project>
