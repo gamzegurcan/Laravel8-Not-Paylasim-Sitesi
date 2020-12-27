@@ -19,14 +19,97 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="admin panel added">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/css/main-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/img/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/bootstrap/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/bootstrap/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/bootstrap/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/dataTables/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/dataTables/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/dataTables/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/flot/jquery.flot.tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/metisMenu/jquery.metisMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/morris/morris-0.4.3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/morris/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/morris/raphael-2.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/pace/pace-theme-big-counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/pace/pace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/social-buttons/social-buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/plugins/timeline/timeline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/scripts/dashboard-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/scripts/flot-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/scripts/morris-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/assets/scripts/siminta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_27_104333_create_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/main-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/img/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/bootstrap/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/bootstrap/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/bootstrap/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/dataTables/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/dataTables/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/dataTables/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/flot/jquery.flot.tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/metisMenu/jquery.metisMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/morris/morris-0.4.3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/morris/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/morris/raphael-2.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/pace/pace-theme-big-counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/pace/pace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/social-buttons/social-buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/plugins/timeline/timeline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/scripts/dashboard-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/scripts/flot-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/scripts/morris-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/login/assets/scripts/siminta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +253,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -213,8 +300,19 @@
       <workItem from="1608385294315" duration="297000" />
       <workItem from="1608385595057" duration="6000" />
       <workItem from="1608385700826" duration="11000" />
-      <workItem from="1608385858568" duration="8271000" />
+      <workItem from="1608385858568" duration="8785000" />
+      <workItem from="1608995368601" duration="8523000" />
+      <workItem from="1609004274635" duration="10446000" />
+      <workItem from="1609065436248" duration="2047000" />
     </task>
+    <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
+      <created>1608394501077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608394501077</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,12 +328,26 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="index.blade changed&#10;home.blade changed&#10;add other pieces" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.blade changed&#10;home.blade changed&#10;add other pieces" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="428" y="188" key="#Notifications" timestamp="1609004122210">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="428" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1609004122210" />
     <state x="390" y="7" key="#PHP" timestamp="1608386633439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="7" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1608386633439" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609012837138">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609012837138" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608388177121">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -244,14 +356,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608386007333" />
-    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1608391406297">
+    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1609000050747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608391406297" />
+    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609000050747" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1608386665356">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609001834486">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609001834486" />
+    <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="555" y="208" key="cloudConfig.SelfSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609006304529" />
     <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1608386017856">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
