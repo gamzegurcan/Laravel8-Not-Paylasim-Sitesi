@@ -6,16 +6,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><i class="fa fa-square-o "></i>&nbsp;TWO PAGE</a>
+            <a class="navbar-brand" href="{{route('admin_home')}}">ANASAYFA</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">See Website</a></li>
-                <li><a href="#">Open Ticket</a></li>
-                <li><a href="#">Report Bug</a></li>
+
+                <li><a href="{{route('admin_logout')}}" class="d-block">Logout</a></li>
             </ul>
         </div>
 
-    </div>
+
 </div>
-<!-- /. NAV TOP  -->
+</div>

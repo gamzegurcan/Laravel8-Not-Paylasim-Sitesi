@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
 
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootsrtap Free Admin Template - SIMINTA | Admin Dashboad Template</title>
+    <title>Admin Login</title>
     <!-- Core CSS - Include with every page -->
     <link href="{{asset('assets')}}/login/assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="{{asset('assets')}}/login/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -28,13 +28,14 @@
                     <h3 class="panel-title">Please Sign In</h3>
                 </div>
                 <div class="panel-body">
-                    <form action="{{route('admin_logincheck')}}" method="post" role="form">
+                    <form action="{{route('admin_loginCheck')}}" method="post">
+                        @csrf
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="E-mail" name="emails" type="emails" autofocus>
+                                <input id="email" class="form-control" placeholder="E-mail" name="email" type="email">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                <input id="password" class="form-control" placeholder="Password" name="password" type="password" >
                             </div>
                             <div class="checkbox">
                                 <label>
@@ -42,7 +43,7 @@
                                 </label>
                             </div>
                             <!-- Change this to a button or input when using this as a form -->
-                            <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                            <button class="btn btn-lg btn-success btn-block">Login</button>
                         </fieldset>
                     </form>
                 </div>

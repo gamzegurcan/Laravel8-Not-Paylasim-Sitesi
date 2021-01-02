@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -16,10 +17,10 @@ class HomeController extends Controller
         return view('admin.login');
     }
 
-    public function logincheck(Request $request){
+    public function loginCheck(Request $request){
 
         if($request->isMethod('post')){
-            $credentials = $request->only('emails','password');
+            $credentials = $request->only('email','password');
             if(Auth::attempt($credentials)){
                 $request->session()->regenerate();
 

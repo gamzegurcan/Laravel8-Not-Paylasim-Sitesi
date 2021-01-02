@@ -185,7 +185,7 @@
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">Collapsible Group Item #1</a>
                             </h4>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                        <div id="collapseOne" class="panel-collapse collapse" style="height: 0">
                             <div class="panel-body">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
                             </div>
@@ -265,3 +265,6 @@
         </div>
         <!-- /. ROW  -->
         <hr />
+
+    </div>
+</div>

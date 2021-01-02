@@ -9,17 +9,14 @@
             <div class="info">
                 @auth
                     <a href="#" class="d-block">{{Auth:: user()->name}}</a>
-                    <a href="{{route('admin_logout')}}" class="d-block">Logout</a>
+
                 @endauth
             </div>
 
 
             <li>
-                <a href="index.html"><i class="fa fa-desktop "></i>Dashboard</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-edit "></i>UI Elements<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
+                <a href="{{route('admin_category')}}"><i class="fa fa-edit "></i>CATEGORIES</a>
+                {{--<ul class="nav nav-second-level">
                     <li>
                         <a href="#">Notifications</a>
                     </li>
@@ -29,7 +26,7 @@
                     <li>
                         <a href="#">Free Link</a>
                     </li>
-                </ul>
+                </ul> --}}
             </li>
 
             <li>
@@ -66,19 +63,6 @@
 
                     </li>
                 </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-qrcode "></i>Tabs & Panels</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i>Mettis Charts</a>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa fa-edit "></i>Last Link </a>
-            </li>
-            <li>
-                <a href="blank.html"><i class="fa fa-table "></i>Blank Page</a>
             </li>
         </ul>
 
