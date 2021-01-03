@@ -60,7 +60,7 @@
                                 <td class="sorting_1">{{$rs -> parent_id}}</td>
                                 <td class="sorting_1">{{$rs -> title}}</td>
                                 <td class=" ">{{$rs -> status}}</td>
-                                <td class="center ">Edit</td>
+                                <td class="center "><a href="{{route('admin_category_edit',['id' => $rs->id])}}">Edit</a></td>
                                 <td class="center "><a href="{{route('admin_category_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')">Delete</a></td>
                             </tr>
 

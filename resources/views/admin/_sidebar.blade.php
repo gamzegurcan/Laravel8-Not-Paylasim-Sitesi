@@ -30,7 +30,7 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-table "></i>Table Examples</a>
+                <a href="{{route('admin_note')}}"><i class="fa fa-table"></i>NOTES</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-edit "></i>Forms </a>
