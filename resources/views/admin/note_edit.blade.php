@@ -1,7 +1,11 @@
 @extends('layouts.admin')
 
 @section('title', 'Notes')
+@section('javascript')
 
+    <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+
+@endsection
 @section('content')
 
     <div id="page-wrapper" >
@@ -18,7 +22,7 @@
             <div class="card-body">
                 <div class="box box-primary">
                     <!-- form start -->
-                    <form role="form" action="{{route('admin_note_update',['id'=>$data->id])}}" method="post">
+                    <form role="form" action="{{route('admin_note_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
@@ -41,11 +45,16 @@
                                 <label>Description</label>
                                 <input type="text" name="description"  value="{{$data->description}}" class="form-control">
                             </div>
-                            {{--<div class="form-group">
-                                <label>Image</label>
-                                <input type="text" name="image" class="form-control">
-                            </div>
                             <div class="form-group">
+                                <label>Image</label>
+                                <input type="file" name="image" value="{{$data->image}}" class="form-control">
+
+                                @if ($data->image)
+                                    <img src="{{Storage::url($data->image)}}" height="30">
+                                @endif
+
+                            </div>
+                            {{--<div class="form-group">
                                 <label>File</label>
                                 <input type="text" name="file" class="form-control">
                             </div>--}}
@@ -59,7 +68,10 @@
                             </div>--}}
                             <div class="form-group">
                                 <label>Detail</label>
-                                <input type="text" name="detail" value="{{$data->detail}}" class="form-control">
+                                <textarea id="detail" name="detail" value="{{$data->detail}}"></textarea>
+                                <script>
+                                    CKEDITOR.replace( 'detail' );
+                                </script>
                             </div>
                             <div class="form-group">
                                 <label>User</label>

@@ -19,21 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="category create,add,delete and other operation added">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Note.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_114752_create_notes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_120319_note.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/note.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" afterDir="false" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="category edit,note add-delete-edit and database operation added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_27_104333_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_27_104333_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_03_114752_create_notes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_114752_create_notes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +173,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -233,7 +225,10 @@
       <workItem from="1609493386510" duration="7797000" />
       <workItem from="1609529699032" duration="874000" />
       <workItem from="1609586381897" duration="21579000" />
-      <workItem from="1609670468604" duration="13968000" />
+      <workItem from="1609670468604" duration="15380000" />
+      <workItem from="1609759441204" duration="64000" />
+      <workItem from="1609762760695" duration="7788000" />
+      <workItem from="1609770649728" duration="3339000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -256,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609617155407</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="category edit,note add-delete-edit and database operation added">
+      <created>1609685507284</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609685507284</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +281,8 @@
     <MESSAGE value="index.blade changed&#10;home.blade changed&#10;add other pieces" />
     <MESSAGE value="admin panel,login panel and database created" />
     <MESSAGE value="category create,add,delete and other operation added" />
-    <option name="LAST_COMMIT_MESSAGE" value="category create,add,delete and other operation added" />
+    <MESSAGE value="category edit,note add-delete-edit and database operation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="category edit,note add-delete-edit and database operation added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -298,10 +301,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609089254583" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608388177121">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609784963218">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608388177121" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609784963218" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609683778213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -322,10 +325,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609617162079">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609685513580">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609617162079" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609685513580" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

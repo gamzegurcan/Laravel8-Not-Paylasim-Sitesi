@@ -1,7 +1,11 @@
 @extends('layouts.admin')
 
 @section('title', 'Notes')
+@section('javascript')
 
+    <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+
+@endsection
 @section('content')
 
     <div id="page-wrapper" >
@@ -18,7 +22,7 @@
             <div class="card-body">
                 <div class="box box-primary">
                     <!-- form start -->
-                    <form role="form" action="{{route('admin_note_store')}}" method="post">
+                    <form role="form" action="{{route('admin_note_store')}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
@@ -41,13 +45,13 @@
                                 <label>Description</label>
                                 <input type="text" name="description" class="form-control">
                             </div>
-                            {{--<div class="form-group">
-                                <label>Image</label>
-                                <input type="text" name="image" class="form-control">
-                            </div>
                             <div class="form-group">
+                                <label>Image</label>
+                                <input type="file" name="image" class="form-control">
+                            </div>
+                            {{--<div class="form-group">
                                 <label>File</label>
-                                <input type="text" name="file" class="form-control">
+                                <input type="file" name="file" class="form-control">
                             </div>--}}
                             <div class="form-group">
                                 <label>Slug</label>
@@ -59,7 +63,10 @@
                             </div>--}}
                             <div class="form-group">
                                 <label>Detail</label>
-                                <input type="text" name="detail" class="form-control">
+                                <textarea id="detail" name="detail"></textarea>
+                                <script>
+                                    CKEDITOR.replace( 'detail' );
+                                </script>
                             </div>
                             <div class="form-group">
                                 <label>User</label>

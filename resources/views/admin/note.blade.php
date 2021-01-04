@@ -34,10 +34,10 @@
                                 <th rowspan="1" colspan="1">Id</th>
                                 <th rowspan="1" colspan="1">Title</th>
                                 <th rowspan="1" colspan="1">Category</th>
-                                <th rowspan="1" colspan="1">Image</th>
-                                <th rowspan="1" colspan="1">File</th>
                                 <th rowspan="1" colspan="1">User</th>
                                 <th rowspan="1" colspan="1">Status</th>
+                                <th rowspan="1" colspan="1">Image</th>
+                                {{--<th rowspan="1" colspan="1">File</th>--}}
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
                             </thead>
@@ -49,14 +49,21 @@
                                 <td class="">{{$rs -> id}}</td>
                                 <td class="sorting_1">{{$rs -> title}}</td>
                                 <td class="sorting_1">{{$rs ->category_id}}</td>
-                                <td class="sorting_1">{{$rs -> image}}</td>
-                                <td class="sorting_1">{{$rs -> file}}</td>
                                 <td class="sorting_1">{{$rs -> user_id}}</td>
                                 <td class=" ">{{$rs -> status}}</td>
+                                <td>
+                                    @if ($rs->image)
+                                        <img src="{{Storage::url($rs->image)}}" height="30">
+                                    @endif
+                                </td>
+                                {{--<td>
+                                    @if ($rs->file)
+                                        <img src="{{Storage::url($rs->file)}}" height="30" alt="">
+                                    @endif
+                                </td>--}}
                                 <td class="center "><a href="{{route('admin_note_edit',['id' => $rs->id])}}">Edit</a></td>
                                 <td class="center "><a href="{{route('admin_note_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')">Delete</a></td>
                             </tr>
-
                             @endforeach
                             </tbody>
                         </table>
