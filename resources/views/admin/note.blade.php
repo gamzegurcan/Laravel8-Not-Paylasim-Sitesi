@@ -37,6 +37,7 @@
                                 <th rowspan="1" colspan="1">User</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Image</th>
+                                <th rowspan="1" colspan="1">Image Gallery</th>
                                 {{--<th rowspan="1" colspan="1">File</th>--}}
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
@@ -56,13 +57,14 @@
                                         <img src="{{Storage::url($rs->image)}}" height="30">
                                     @endif
                                 </td>
+                                <td><a href="{{route('admin_image_add',['note_id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')"><img src="{{asset('assets')}}/admin/assets/images/galleryicon.png" height="25"></a></td>
                                 {{--<td>
                                     @if ($rs->file)
                                         <img src="{{Storage::url($rs->file)}}" height="30" alt="">
                                     @endif
                                 </td>--}}
-                                <td class="center "><a href="{{route('admin_note_edit',['id' => $rs->id])}}">Edit</a></td>
-                                <td class="center "><a href="{{route('admin_note_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')">Delete</a></td>
+                                <td class="center "><a href="{{route('admin_note_edit',['id' => $rs->id])}}"><img src="{{asset('assets')}}/admin/assets/images/editicon.png" height="25"></a></td>
+                                <td class="center "><a href="{{route('admin_note_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')"><img src="{{asset('assets')}}/admin/assets/images/deleteicon.png" height="25"></a></td>
                             </tr>
                             @endforeach
                             </tbody>

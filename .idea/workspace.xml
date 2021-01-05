@@ -19,14 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="category edit,note add-delete-edit and database operation added">
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Ckedıtor add and note image upload-display">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_182512_create_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_05_183149_image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/deleteicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/editicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/galleryicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_03_114752_create_notes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_03_114752_create_notes_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,12 +187,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\php\Laravel-NotPaylaşım\resources" />
       <recent name="C:\php\Laravel-NotPaylaşım\resources\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.Laravel-NotPaylaşım">
@@ -228,7 +235,10 @@
       <workItem from="1609670468604" duration="15380000" />
       <workItem from="1609759441204" duration="64000" />
       <workItem from="1609762760695" duration="7788000" />
-      <workItem from="1609770649728" duration="3339000" />
+      <workItem from="1609770649728" duration="3773000" />
+      <workItem from="1609837885945" duration="615000" />
+      <workItem from="1609864800695" duration="972000" />
+      <workItem from="1609870536284" duration="11123000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -258,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609685507284</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ckedıtor add and note image upload-display">
+      <created>1609785695246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609785695246</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +299,8 @@
     <MESSAGE value="admin panel,login panel and database created" />
     <MESSAGE value="category create,add,delete and other operation added" />
     <MESSAGE value="category edit,note add-delete-edit and database operation added" />
-    <option name="LAST_COMMIT_MESSAGE" value="category edit,note add-delete-edit and database operation added" />
+    <MESSAGE value="Ckedıtor add and note image upload-display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ckedıtor add and note image upload-display" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -305,10 +323,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609784963218" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609683778213">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609874000434">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609683778213" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609874000434" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608386007333">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -325,10 +343,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609685513580">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609785698834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609685513580" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609785698834" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

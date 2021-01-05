@@ -102,8 +102,11 @@ class NoteController extends Controller
         $data->status = $request->input('status');
         $data->category_id = $request->input('category_id');
         $data->detail = $request->input('detail');
-        $data->image = Storage::putFile('images',$request->file('image'));
         $data->user_id = Auth::id();
+
+        if($request->file('image')!= null) {
+            $data->image = Storage::putFile('images', $request->file('image'));
+        }
 
         $data->save();
         return redirect() -> route('admin_note');

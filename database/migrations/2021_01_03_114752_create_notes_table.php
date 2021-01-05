@@ -18,7 +18,7 @@ class CreateNotesTable extends Migration
             $table->string('title', 150);
             $table->string('keywords')->nullable();
             $table->string('description')->nullable();
-            $table->file('image')->nullable();
+            $table->string('image')->nullable();
             $table->string('file', 100)->nullable();
             $table->string('slug',100)->nullable();
             $table->integer('category_id')->default(0);
