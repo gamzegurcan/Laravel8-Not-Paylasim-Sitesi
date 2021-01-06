@@ -48,7 +48,10 @@
 
                             <tr class="gradeU odd">
                                 <td class="">{{$rs -> id}}</td>
-                                <td class="sorting_1">{{$rs -> title}}</td>
+                                <td>
+                                    {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}
+                                </td>
+                                {{--<td class="sorting_1">{{$rs -> title}}</td>--}}
                                 <td class="sorting_1">{{$rs ->category->title}}</td>
                                 <td class="sorting_1">{{$rs -> user->name}}</td>
                                 <td class=" ">{{$rs -> status}}</td>

@@ -30,7 +30,7 @@ class NoteController extends Controller
      */
     public function create()
     {
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
         return view ('admin.note_add',['datalist' =>$datalist]);
     }
 
@@ -79,7 +79,7 @@ class NoteController extends Controller
     public function edit(Note $note,$id)
     {
         $data = Note::find($id);
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
 
         return view('admin.note_edit',['data'=>$data,'datalist' =>$datalist]);
     }
