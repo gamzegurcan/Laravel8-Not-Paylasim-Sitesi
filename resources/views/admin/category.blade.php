@@ -25,19 +25,6 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="dataTables_length" id="dataTables-example_length">
-                                    {{--<label>
-                                        <select name="dataTables-example_length" aria-controls="dataTables-example" class="form-control input-sm">
-                                            <option value="10">10</option>
-                                            <option value="25">25</option>
-                                            <option value="50">50</option>
-                                            <option value="100">100</option>
-                                        </select> records per page</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6"><div id="dataTables-example_filter" class="dataTables_filter">
-                                    <label>Search:
-                                        <input type="search" class="form-control input-sm" aria-controls="dataTables-example">
-                                    </label>--}}
                                 </div>
                             </div>
                         </div>
@@ -67,31 +54,6 @@
                             @endforeach
                             </tbody>
                         </table>
-                        {{--<div class="row">
-                            <div class="col-sm-6"><div class="dataTables_info" id="dataTables-example_info" role="alert" aria-live="polite" aria-relevant="all">Showing 1 to 10 of 57 entries</div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
-                                    <ul class="pagination">
-                                        <li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
-                                            <a href="#">Previous</a>
-                                        </li>
-                                        <li class="paginate_button active" aria-controls="dataTables-example" tabindex="0">
-                                            <a href="#">1</a>
-                                        </li>
-                                        <li class="paginate_button " aria-controls="dataTables-example" tabindex="0">
-                                            <a href="#">2</a>
-                                        </li>
-                                        <li class="paginate_button " aria-controls="dataTables-example" tabindex="0">
-                                            <a href="#">3</a>
-                                        </li>
-                                        <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
-                                            <a href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>--}}
                     </div>
                 </div>
 

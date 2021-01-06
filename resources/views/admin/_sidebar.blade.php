@@ -64,6 +64,9 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="{{route('admin_setting')}}"><i class="fa fa-edit "></i>SETTINGS</a>
+            </li>
         </ul>
 
     </div>
