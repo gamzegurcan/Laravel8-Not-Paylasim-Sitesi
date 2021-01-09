@@ -1,3 +1,4 @@
+
 <header id="mu-header">
     <div class="container">
         <div class="row">
@@ -8,11 +9,11 @@
                             <div class="mu-header-top-left">
                                 <div class="mu-top-email">
                                     <i class="fa fa-envelope"></i>
-                                    <span>info@markups.io</span>
+                                    <span>{{$setting->email}}</span>
                                 </div>
                                 <div class="mu-top-phone">
                                     <i class="fa fa-phone"></i>
-                                    <span>(568) 986 652</span>
+                                    <span>{{$setting->phone}}</span>
                                 </div>
                             </div>
                         </div>
@@ -20,11 +21,9 @@
                             <div class="mu-header-top-right">
                                 <nav>
                                     <ul class="mu-top-social-nav">
-                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                                        @if($setting->facebook != null)<li><a href="{{$setting->facebook}}" target="_blank"><span class="fa fa-facebook"></span></a></li>@endif
+                                        @if($setting->twitter != null)<li><a href="{{$setting->twitter}}" target="_blank"><span class="fa fa-twitter"></span></a></li>@endif
+                                        @if($setting->instagram != null)<li><a href="{{$setting->instagram}}" target="_blank"><span class="fa fa-instagram"></span></a></li>@endif
                                     </ul>
                                 </nav>
                             </div>

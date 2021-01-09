@@ -1,3 +1,6 @@
+@php
+    $setting  = \App\Http\Controllers\HomeController::getsetting()
+@endphp
 <footer id="mu-footer">
     <!-- start footer top -->
     <div class="mu-footer-top">
@@ -29,7 +32,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    {{--<div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="mu-footer-widget">
                             <h4>News letter</h4>
                             <p>Get latest update, news & academic offers</p>
@@ -38,15 +41,15 @@
                                 <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
                             </form>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="mu-footer-widget">
                             <h4>Contact</h4>
                             <address>
-                                <p>P.O. Box 320, Ross, California 9495, USA</p>
-                                <p>Phone: (415) 453-1568 </p>
-                                <p>Website: www.markups.io</p>
-                                <p>Email: info@markups.io</p>
+                                <p>Address: {{$setting->adress}}</p>
+                                <p>Phone: {{$setting->phone}}</p>
+                                <p>Fax: {{$setting->fax}}</p>
+                                <p>Email: {{$setting->email}}</p>
                             </address>
                         </div>
                     </div>
@@ -59,7 +62,7 @@
     <div class="mu-footer-bottom">
         <div class="container">
             <div class="mu-footer-bottom-area">
-                <p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>
+                <p>&copy; All Right Reserved. Designed by Gamze Gürcan</p>
             </div>
         </div>
     </div>

@@ -7,7 +7,6 @@
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
-    <meta name="author" content="John Doe">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{asset('assets')}}/img/favicon.ico" type="image/x-icon">
@@ -44,7 +43,7 @@
 </head>
 <body>
 @include('home._header')
-@include('home._category')
+@include('home._navbar')
 @include('home._slider')
 @section('content')
 @show

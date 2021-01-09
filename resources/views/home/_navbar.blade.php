@@ -14,13 +14,13 @@
                 </button>
                 <!-- LOGO -->
                 <!-- TEXT BASED LOGO -->
-                <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Varsity</span></a>
+                <a class="navbar-brand" href=""><i class="fa fa-university"></i><span>Home Page</span></a>
                 <!-- IMG BASED LOGO  -->
                 <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -30,7 +30,7 @@
                                     <div class="custom-menu">
                                         <div class="row">
                                             @if(count($rs->children))
-                                                @include('categorytree',['children'=>$rs->children])
+                                                @include('home.categorytree',['children'=>$rs->children])
                                             @endif
                                         </div>
                                     </div>
@@ -47,7 +47,26 @@
                         </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+                    {{--<li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>--}}
+                    <li class="dropdown">
+                        @auth
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span>
+                            <strong class="text-uppercase">{{Auth::user()->name}}</strong>
+                        @endauth
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i>Logout </a></li>
+                        </ul>
+                    </li>
+                    @guest
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/register">Join</a></li>
+                        </ul>
+                    </li>
+                    @endguest
                 </ul>
             </div><!--/.nav-collapse -->
         </div>

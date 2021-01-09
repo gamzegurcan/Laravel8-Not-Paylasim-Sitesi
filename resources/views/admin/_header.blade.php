@@ -12,7 +12,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">See Website</a></li>
 
-                <li><a href="{{route('admin_logout')}}" class="d-block">Logout</a></li>
+                <li><a href="{{route('logout')}}" class="d-block">Logout</a></li>
             </ul>
         </div>
 

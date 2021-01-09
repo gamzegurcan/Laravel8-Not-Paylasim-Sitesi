@@ -70,7 +70,7 @@
                             </div>--}}
                             <div class="form-group">
                                 <label>Detail</label>
-                                <textarea id="detail" name="detail" value="{{$data->detail}}"></textarea>
+                                <textarea id="detail" name="detail">{{$data->detail}}</textarea>
                                 <script>
                                     CKEDITOR.replace( 'detail' );
                                 </script>

@@ -28,9 +28,12 @@ class NoteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $datalist = Category::with('children')->get();
+        if($request->file('image')!= null) {
+            $datalist->image = Storage::putFile('images', $request->file('image'));
+        }
         return view ('admin.note_add',['datalist' =>$datalist]);
     }
 
