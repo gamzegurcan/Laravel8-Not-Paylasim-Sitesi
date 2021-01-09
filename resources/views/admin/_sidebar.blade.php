@@ -32,7 +32,7 @@
             <li>
                 <a href="{{route('admin_note')}}"><i class="fa fa-table"></i>NOTES</a>
             </li>
-            <li>
+            {{--<li>
                 <a href="#"><i class="fa fa-edit "></i>Forms </a>
             </li>
 
@@ -63,7 +63,7 @@
 
                     </li>
                 </ul>
-            </li>
+            </li>--}}
             <li>
                 <a href="{{route('admin_setting')}}"><i class="fa fa-edit "></i>SETTINGS</a>
             </li>

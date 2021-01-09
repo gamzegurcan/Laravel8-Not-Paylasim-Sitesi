@@ -1,4 +1,6 @@
-
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting()
+@endphp
 <header id="mu-header">
     <div class="container">
         <div class="row">

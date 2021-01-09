@@ -32,8 +32,8 @@
                             <thead>
                             <tr>
                                 <th rowspan="1" colspan="1">Id</th>
-                                <th rowspan="1" colspan="1">Title</th>
                                 <th rowspan="1" colspan="1">Category</th>
+                                <th rowspan="1" colspan="1">Title</th>
                                 <th rowspan="1" colspan="1">User</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Image</th>
@@ -52,7 +52,7 @@
                                     {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}
                                 </td>
                                 {{--<td class="sorting_1">{{$rs -> title}}</td>--}}
-                                <td class="sorting_1">{{$rs ->category->title}}</td>
+                                <td class="sorting_1">{{$rs ->title}}</td>
                                 <td class="sorting_1">{{$rs -> user->name}}</td>
                                 <td class=" ">{{$rs -> status}}</td>
                                 <td>

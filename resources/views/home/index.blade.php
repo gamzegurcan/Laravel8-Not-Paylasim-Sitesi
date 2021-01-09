@@ -1,7 +1,4 @@
 @extends('layouts.home')
-@php
-    $setting = \App\Http\Controllers\HomeController::getsetting()
-@endphp
 
 @section('title', $setting->title )
 
@@ -12,6 +9,7 @@
 @section('keywords' , $setting->keywords)
 
 @section('content')
+@include('home._slider')
     <section id="mu-service">
         <div class="container">
             <div class="row">

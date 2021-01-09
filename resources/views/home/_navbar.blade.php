@@ -6,21 +6,20 @@
         <div class="container">
             <div class="navbar-header">
                 <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarDefault" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarDefault">
+
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <!-- LOGO -->
                 <!-- TEXT BASED LOGO -->
-                <a class="navbar-brand" href=""><i class="fa fa-university"></i><span>Home Page</span></a>
+                <a class="navbar-brand" href="{{route('home')}}"><i class="fa fa-university"></i><span>Home Page</span></a>
                 <!-- IMG BASED LOGO  -->
-                <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -55,6 +54,7 @@
                         @endauth
                         </a>
                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{route('myprofile')}}"><i class="fa fa-user-o"></i>My Account</a></li>
                             <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i>Logout </a></li>
                         </ul>
                     </li>

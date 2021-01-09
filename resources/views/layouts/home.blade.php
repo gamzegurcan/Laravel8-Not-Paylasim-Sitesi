@@ -31,12 +31,26 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+    <script src="{{asset('assets')}}/js/jquery.min.js"></script>
+
+    <script src="{{asset('assets')}}/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="{{asset('assets')}}/js/slick.js"></script>
+
+    <script type="text/javascript" src="{{asset('assets')}}/js/waypoints.js"></script>
+    <script type="text/javascript" src="{{asset('assets')}}/js/jquery.counterup.js"></script>
+
+    <script type="text/javascript" src="{{asset('assets')}}/js/jquery.mixitup.js"></script>
+
+    <script type="text/javascript" src="{{asset('assets')}}/js/jquery.fancybox.pack.js"></script>
+
+
+    <script src="{{asset('assets')}}/js/custom.js"></script>
+
     @yield('css')
     @yield('headerjs')
 
@@ -44,7 +58,7 @@
 <body>
 @include('home._header')
 @include('home._navbar')
-@include('home._slider')
+
 @section('content')
 @show
 @include('home._footer')

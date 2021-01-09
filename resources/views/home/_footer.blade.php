@@ -83,5 +83,11 @@
 <script type="text/javascript" src="{{asset('assets')}}/js/jquery.fancybox.pack.js"></script>
 
 
+
+
+<!-- Custom js -->
+<script src="{{asset('assets')}}/js/custom.js"></script>
+
+
 <!-- Custom js -->
 <script src="{{asset('assets')}}/js/custom.js"></script>
