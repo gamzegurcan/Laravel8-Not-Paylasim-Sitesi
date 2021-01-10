@@ -2,7 +2,7 @@
     $parentCategories = \App\Http\Controllers\HomeController::categorylist()
 @endphp
 <section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" >
         <div class="container">
             <div class="navbar-header">
                 <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
@@ -14,7 +14,7 @@
                 </button>
                 <!-- LOGO -->
                 <!-- TEXT BASED LOGO -->
-                <a class="navbar-brand" href="{{route('home')}}"><i class="fa fa-university"></i><span>Home Page</span></a>
+                <a class="navbar-brand" href="{{route('home')}}"><i class="fa fa-university"></i><span>Note Share</span></a>
                 <!-- IMG BASED LOGO  -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
@@ -37,16 +37,10 @@
                             @endforeach
                         </ul>
                     </li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="blog-archive.html">Blog Archive</a></li>
-                            <li><a href="blog-single.html">Blog Single</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    {{--<li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>--}}
+                    <li><a href="{{route('about')}}">About</a></li>
+                    <li><a href="{{route('contact')}}">Contact</a></li>
+                    <li><a href="{{route('references')}}">References</a></li>
+
                     <li class="dropdown">
                         @auth
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span>
@@ -67,6 +61,7 @@
                         </ul>
                     </li>
                     @endguest
+                    <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>

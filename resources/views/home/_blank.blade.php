@@ -162,6 +162,7 @@
       </div>
     </div>
   </div>
+
   <!-- Start footer -->
   <footer id="mu-footer">
     <!-- start footer top -->

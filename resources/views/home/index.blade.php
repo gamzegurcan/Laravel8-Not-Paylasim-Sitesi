@@ -44,36 +44,7 @@
     <!-- End service  -->
 
     <!-- Start about us -->
-    <section id="mu-about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-about-us-area">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="mu-about-us-left">
-                                    <!-- Start Title -->
-                                    <div class="mu-title">
-                                        <h2>About Us</h2>
-                                    </div>
-                                        {!!$setting->aboutus!!}
 
-
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-
-                                        <img src="{{asset('assets')}}/images/aboutus.png" height="250">
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End about us -->
 
     <!-- Start about us counter -->
     <section id="mu-abtus-counter">
