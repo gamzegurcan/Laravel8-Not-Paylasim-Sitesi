@@ -123,21 +123,21 @@
                                         <hr />
                                        <div class="form-group">
                                            <label>About Us</label>
-                                           <textarea id="aboutus" name="aboutus">{{$data->aboutus}}</textarea>
+                                           <textarea id="aboutus" name="aboutus">{!!$data->aboutus!!}</textarea>
                                        </div>
                                     </div>
                                     <div class="tab-pane fade" id="contact2">
                                         <hr />
                                         <div class="form-group">
                                             <label>Contact</label>
-                                            <textarea id="contact" name="contact">{{$data->contact}}</textarea>
+                                            <textarea id="contact" name="contact">{!!$data->contact!!}</textarea>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="references2">
                                         <hr />
                                         <div class="form-group">
                                             <label>References</label>
-                                            <textarea id="references" name="references">{{$data->references}}</textarea>
+                                            <textarea id="references" name="references">{!!$data->references!!}</textarea>
                                         </div>
                                     </div>
                                     <script>

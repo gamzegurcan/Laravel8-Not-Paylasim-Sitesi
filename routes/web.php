@@ -29,7 +29,6 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 
 Route::get( '/home', [HomeController::class, 'index']);
-//Route::get('/test/{id}/{name}',[HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 
 //Admin
 Route::middleware('auth')->prefix('admin')->group(function () {

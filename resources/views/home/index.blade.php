@@ -56,7 +56,7 @@
                                     <div class="mu-title">
                                         <h2>About Us</h2>
                                     </div>
-                                        {{$setting->aboutus}}
+                                        {!!$setting->aboutus!!}
 
 
                                 </div>
@@ -125,80 +125,6 @@
         </div>
     </section>
     <!-- End about us counter -->
-
-    <!-- Start features section -->
-    <section id="mu-features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="mu-features-area">
-                        <!-- Start Title -->
-                        <div class="mu-title">
-                            <h2>Our Features</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa ea maxime mollitia, vitae voluptates, quod at, saepe reprehenderit totam aliquam architecto fugiat sunt animi!</p>
-                        </div>
-                        <!-- End Title -->
-                        <!-- Start features content -->
-                        <div class="mu-features-content">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4  col-sm-6">
-                                    <div class="mu-single-feature">
-                                        <span class="fa fa-book"></span>
-                                        <h4>Professional Courses</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="mu-single-feature">
-                                        <span class="fa fa-users"></span>
-                                        <h4>Expert Teachers</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="mu-single-feature">
-                                        <span class="fa fa-laptop"></span>
-                                        <h4>Online Learning</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="mu-single-feature">
-                                        <span class="fa fa-microphone"></span>
-                                        <h4>Audio Lessons</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="mu-single-feature">
-                                        <span class="fa fa-film"></span>
-                                        <h4>Video Lessons</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <div class="mu-single-feature">
-                                        <span class="fa fa-certificate"></span>
-                                        <h4>Professional Certificate</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                                        <a href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End features content -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End features section -->
-
     <!-- Start latest course section -->
     <section id="mu-latest-courses">
         <div class="container">
