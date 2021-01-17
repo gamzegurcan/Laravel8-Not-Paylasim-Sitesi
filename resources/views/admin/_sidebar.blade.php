@@ -15,7 +15,7 @@
 
 
             <li>
-                <a href="{{route('admin_category')}}"><i class="fa fa-edit "></i>CATEGORIES</a>
+                <a href="{{route('admin_category')}}"><i class="fa fa-bars "></i>CATEGORIES</a>
                 {{--<ul class="nav nav-second-level">
                     <li>
                         <a href="#">Notifications</a>
@@ -32,12 +32,12 @@
             <li>
                 <a href="{{route('admin_note')}}"><i class="fa fa-table"></i>NOTES</a>
             </li>
-            {{--<li>
-                <a href="#"><i class="fa fa-edit "></i>Forms </a>
+            <li>
+                <a href="{{route('admin_message')}}"><i class="fa fa-comment "></i>MESSAGES </a>
             </li>
 
 
-            <li>
+            {{--<li>
                 <a href="#"><i class="fa fa-sitemap "></i>Multi-Level Dropdown<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
