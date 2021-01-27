@@ -10,7 +10,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">See Website</a></li>
+                <li><a href="{{route('home')}}">See Website</a></li>
 
                 <li><a href="{{route('logout')}}" class="d-block">Logout</a></li>
             </ul>

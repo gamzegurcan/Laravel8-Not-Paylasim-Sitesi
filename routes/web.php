@@ -26,6 +26,8 @@ Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
 Route::get('/references', [HomeController::class, 'references'])->name('references');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::get('/notes/{id}', [HomeController::class, 'notes'])->name('notes');
+Route::get('/categorynotes/{id}', [HomeController::class, 'categorynotes'])->name('categorynotes');
 
 
 

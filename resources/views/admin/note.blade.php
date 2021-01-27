@@ -38,7 +38,7 @@
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Image</th>
                                 <th rowspan="1" colspan="1">Image Gallery</th>
-                                {{--<th rowspan="1" colspan="1">File</th>--}}
+                                <th rowspan="1" colspan="1">File</th>
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
                             </thead>
@@ -51,7 +51,6 @@
                                 <td>
                                     {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}
                                 </td>
-                                {{--<td class="sorting_1">{{$rs -> title}}</td>--}}
                                 <td class="sorting_1">{{$rs ->title}}</td>
                                 <td class="sorting_1">{{$rs -> user->name}}</td>
                                 <td class=" ">{{$rs -> status}}</td>
@@ -61,11 +60,11 @@
                                     @endif
                                 </td>
                                 <td><a href="{{route('admin_image_add',['note_id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')"><img src="{{asset('assets')}}/admin/assets/images/galleryicon.png" height="25"></a></td>
-                                {{--<td>
+                                <td>
                                     @if ($rs->file)
-                                        <img src="{{Storage::url($rs->file)}}" height="30" alt="">
+                                        <a href="{{Storage::url($rs->file)}}" target="_blank"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="25"></a>
                                     @endif
-                                </td>--}}
+                                </td>
                                 <td class="center "><a href="{{route('admin_note_edit',['id' => $rs->id])}}"><img src="{{asset('assets')}}/admin/assets/images/editicon.png" height="25"></a></td>
                                 <td class="center "><a href="{{route('admin_note_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')"><img src="{{asset('assets')}}/admin/assets/images/deleteicon.png" height="25"></a></td>
                             </tr>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Message;
+use App\Models\Note;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,7 +24,18 @@ class HomeController extends Controller
     public function index()
     {
         $setting=Setting::first();
-        return view('home.index',['setting'=>$setting]);
+        $slider= Note::select('id','title','image')->limit(3)->get();
+        $latest= Note::select('id','title','detail','image')->limit(6)->orderByDesc('id')->get();
+        $notes= Note::select('id','title','image')->limit(3)->inRandomOrder()->get();
+        $data= [
+            'setting'=>$setting,
+            'slider'=>$slider,
+            'latest'=>$latest,
+            'notes'=>$notes,
+            'page'=>'home'
+        ];
+
+        return view('home.index',$data);
     }
 
     public function about(){
@@ -57,6 +69,14 @@ class HomeController extends Controller
 
         $data->save();
         return redirect()->route('contact')->with('success','Mesajınız iletilmiştir, Teşekkür ederiz..');
+    }
+
+    public function categorynotes($id){
+
+        $datalist = Note::where('category_id',$id)->get();
+        $data = Category::find($id);
+        return view('home.category_notes',['data'=>$data,'datalist'=>$datalist]);
+
     }
 
     public function login(){

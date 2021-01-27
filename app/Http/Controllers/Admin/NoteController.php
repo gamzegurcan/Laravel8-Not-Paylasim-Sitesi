@@ -34,6 +34,9 @@ class NoteController extends Controller
         if($request->file('image')!= null) {
             $datalist->image = Storage::putFile('images', $request->file('image'));
         }
+        if($request->file('file')!=null){
+            $datalist->file = storage::putfile('files',$request->file('file'));
+        }
         return view ('admin.note_add',['datalist' =>$datalist]);
     }
 
@@ -54,7 +57,12 @@ class NoteController extends Controller
         $data->status = $request->input('status');
         $data->category_id = $request->input('category_id');
         $data->detail = $request->input('detail');
-        $data->image = Storage::putFile('images',$request->file('image'));
+        if($request->file('image')!= null) {
+            $data->image = Storage::putFile('images', $request->file('image'));
+        }
+        if($request->file('file')!=null){
+            $data->file = storage::putfile('files',$request->file('file'));
+        }
         $data->user_id = Auth::id();
 
 
@@ -109,6 +117,9 @@ class NoteController extends Controller
 
         if($request->file('image')!= null) {
             $data->image = Storage::putFile('images', $request->file('image'));
+        }
+        if($request->file('file')!=null){
+            $data->file = storage::putfile('files',$request->file('file'));
         }
 
         $data->save();

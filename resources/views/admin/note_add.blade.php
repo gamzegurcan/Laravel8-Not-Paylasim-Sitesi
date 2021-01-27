@@ -49,18 +49,14 @@
                                 <label>Image</label>
                                 <input type="file" name="image" class="form-control">
                             </div>
-                            {{--<div class="form-group">
+                            <div class="form-group">
                                 <label>File</label>
                                 <input type="file" name="file" class="form-control">
-                            </div>--}}
+                            </div>
                             <div class="form-group">
                                 <label>Slug</label>
                                 <input type="text" name="slug" class="form-control">
                             </div>
-                            {{--<div class="form-group">
-                                <label>Category</label>
-                                <input type="number" name="category" class="form-control">
-                            </div>--}}
                             <div class="form-group">
                                 <label>Detail</label>
                                 <textarea id="detail" name="detail"></textarea>

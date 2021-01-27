@@ -19,19 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="About contact and references pages added">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_111130_create_messages_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_111914_message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/messages_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/message.blade.php" afterDir="false" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Contact message added for admin panel">
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/category_notes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/assets/img/find_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/assets/img/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +189,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -192,8 +200,8 @@
       <recent name="C:\php\Laravel-NotPaylaşım\resources\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
       <recent name="C:\php\Laravel-NotPaylaşım\resources\views\home" />
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
       <recent name="C:\php\Laravel-NotPaylaşım\resources\views\layouts" />
     </key>
   </component>
@@ -251,7 +259,11 @@
       <workItem from="1610277322942" duration="12589000" />
       <workItem from="1610453522508" duration="921000" />
       <workItem from="1610620481819" duration="7127000" />
-      <workItem from="1610874591904" duration="7530000" />
+      <workItem from="1610874591904" duration="11514000" />
+      <workItem from="1611390976881" duration="6346000" />
+      <workItem from="1611651054126" duration="9125000" />
+      <workItem from="1611732022245" duration="11974000" />
+      <workItem from="1611759032566" duration="6571000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -337,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610288345115</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Contact message added for admin panel">
+      <created>1610883773828</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610883773828</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +388,8 @@
     <MESSAGE value="User profile page created and jetstream added" />
     <MESSAGE value="new column added for users table" />
     <MESSAGE value="About contact and references pages added" />
-    <option name="LAST_COMMIT_MESSAGE" value="About contact and references pages added" />
+    <MESSAGE value="Contact message added for admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact message added for admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -404,6 +424,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1609089178749" />
+    <state x="513" y="87" key="NewPhpClassDialog" timestamp="1611743258836">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1611743258836" />
     <state x="859" y="287" key="NewPhpFileDialog" timestamp="1610627349827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -412,10 +436,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610288350347">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1610883777496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610288350347" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1610883777496" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -440,10 +464,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="526" y="67" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1610210817498" />
-    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1608386017856">
+    <state x="389" y="0" width="585" height="728" key="find.popup" timestamp="1611655584562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1608386017856" />
+    <state x="389" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1611655584562" />
     <state x="400" y="135" key="refactoring.ChangeSignatureDialog" timestamp="1610113541395">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

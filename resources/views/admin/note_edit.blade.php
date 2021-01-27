@@ -56,18 +56,19 @@
                                 @endif
 
                             </div>
-                            {{--<div class="form-group">
+                            <div class="form-group">
                                 <label>File</label>
-                                <input type="text" name="file" class="form-control">
-                            </div>--}}
+                                <input type="file" name="file" class="form-control">
+
+                                @if($data->file)
+                                <a href="{{Storage::url($rs->file)}}"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="25"></a>
+                                @endif
+
+                            </div>
                             <div class="form-group">
                                 <label>Slug</label>
                                 <input type="text" name="slug"  value="{{$data->slug}}" class="form-control">
                             </div>
-                            {{--<div class="form-group">
-                                <label>Category</label>
-                                <input type="number" name="category"  value="{{$data->category}}" class="form-control">
-                            </div>--}}
                             <div class="form-group">
                                 <label>Detail</label>
                                 <textarea id="detail" name="detail">{{$data->detail}}</textarea>
