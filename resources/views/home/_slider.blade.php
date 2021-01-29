@@ -12,8 +12,8 @@
             <h4>{{$rs->title}}</h4>
             <span></span>
             <h2>We Will Help You To Learn</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-            <a href="#" class="mu-read-more-btn">Read More</a>
+            <p>{!!$rs->detail!!}</p>
+            <a href="{{Storage::url($rs->file)}}" target="_blank" class="mu-read-more-btn">Read More</a>
         </div>
     </div>
     @endforeach

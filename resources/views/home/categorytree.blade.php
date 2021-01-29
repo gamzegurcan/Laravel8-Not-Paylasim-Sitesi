@@ -1,12 +1,12 @@
 @foreach($children as $subcategory)
-    <ul class="dropdown-menu" role="menu">
+    <ul>
         @if(count($subcategory->children))
             <li style="color:#1087dd">
                 {{$subcategory->title}}
             </li>
-            <ul>
+            <li>
                 @include('home.categorytree',['children'=>$subcategory->children])
-            </ul>
+            </li>
         @else
             <li>
                 <a href="{{route('categorynotes',['id'=>$subcategory->id,'slug'=>$subcategory->slug])}}">{{$subcategory->title}}</a>

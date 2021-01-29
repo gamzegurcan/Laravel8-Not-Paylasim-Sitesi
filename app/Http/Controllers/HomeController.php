@@ -24,8 +24,8 @@ class HomeController extends Controller
     public function index()
     {
         $setting=Setting::first();
-        $slider= Note::select('id','title','image')->limit(3)->get();
-        $latest= Note::select('id','title','detail','image')->limit(6)->orderByDesc('id')->get();
+        $slider= Note::select('id','title','image','detail','file')->limit(4)->inRandomOrder()->get();
+        $latest= Note::select('id','title','detail','image','file')->limit(6)->orderByDesc('id')->get();
         $notes= Note::select('id','title','image')->limit(3)->inRandomOrder()->get();
         $data= [
             'setting'=>$setting,
@@ -36,6 +36,12 @@ class HomeController extends Controller
         ];
 
         return view('home.index',$data);
+    }
+
+    public function addtocard($id){
+        $data = Note::find($id);
+
+
     }
 
     public function about(){
