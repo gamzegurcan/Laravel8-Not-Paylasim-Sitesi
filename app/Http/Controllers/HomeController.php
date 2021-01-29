@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Note;
 use App\Models\Setting;
@@ -38,11 +39,15 @@ class HomeController extends Controller
         return view('home.index',$data);
     }
 
-    public function addtocard($id){
+    public function note($id){
+
         $data = Note::find($id);
+        $datalist = Image::where('note_id',$id)->get();
+        /*$reviews = \App\Models\Review::where('content_id',$id)->get();*/
 
-
+        return view('home.note_detail',['data' => $data,'datalist' => $datalist]);
     }
+
 
     public function about(){
         $setting=Setting::first();

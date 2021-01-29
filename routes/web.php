@@ -28,7 +28,7 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/notes/{id}', [HomeController::class, 'notes'])->name('notes');
 Route::get('/categorynotes/{id}', [HomeController::class, 'categorynotes'])->name('categorynotes');
-Route::get('/addtocard/{id}', [HomeController::class, 'note'])->name('addtocard');
+Route::get('/note/{id}', [HomeController::class, 'note'])->name('note');
 
 
 

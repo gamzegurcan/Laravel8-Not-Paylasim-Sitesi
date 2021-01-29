@@ -42,9 +42,9 @@
                                                 </figure>
                                                 <div class="mu-latest-course-single-content">
 
-                                                    <p>{!!$rs->detail!!}</p>
-                                                    <h6><a href="{{Storage::url($rs->file)}}" target="_blank"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="25">Tıklayınız</a></h6>
-
+                                                    {{--<p>{!!$rs->detail!!}</p>--}}
+                                                   {{-- <h6><a href="{{Storage::url($rs->file)}}" target="_blank"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="25">Tıklayınız</a></h6>--}}
+                                                    <h4><a href="{{route('note',['id'=>$rs->id])}}">Detail</a></h4>
                                                 </div>
                                             </div>
                                         </div>
