@@ -10,40 +10,13 @@
 
 @section('content')
 @include('home._slider')
-    {{--<section id="mu-service">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="mu-service-area">
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-book"></span>
-                            <h3>Learn Online</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
-                        </div>
-                        <!-- Start single service -->
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-users"></span>
-                            <h3>Expert Teachers</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
-                        </div>
-                        <!-- Start single service -->
-                        <!-- Start single service -->
-                        <div class="mu-service-single">
-                            <span class="fa fa-table"></span>
-                            <h3>Best Classrooms</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
-                        </div>
-                        <!-- Start single service -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End service  -->--}}
-    <!-- Start latest course section -->
-<!-- Start our teacher -->
+
+<!--START SCROLL TOP BUTTON -->
+<a class="scrollToTop" href="#">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!-- END SCROLL TOP BUTTON -->
+
 <section id="mu-our-teacher">
     <div class="container">
         <div class="row">
@@ -153,8 +126,8 @@
                         <!-- End Title -->
                         <!-- Start latest course content -->
                         <div id="mu-latest-course-slide" class="mu-latest-courses-content">
-                           @foreach($latest as $rs)
 
+                            @foreach($latest as $rs)
                             <div class="col-lg-4 col-md-4 col-xs-12">
                                 <div class="mu-latest-course-single">
                                     <figure class="mu-latest-course-img">
@@ -165,15 +138,14 @@
                                         </figcaption>
                                     </figure>
                                     <div class="mu-latest-course-single-content">
-                                        <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
                                         <p>{!!$rs->detail!!}</p>
                                         <div class="mu-latest-course-single-contbottom">
-                                            <h6><a href="{{Storage::url($rs->file)}}" target="_blank"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="25">Tıklayınız</a></h6>
-                                        </div>
+                                            <h4><a href="{{route('note',['id'=>$rs->id])}}">Show Note Detail</a></h4>                                        </div>
                                     </div>
                                 </div>
                             </div>
                             @endforeach
+
                         </div>
                         <!-- End latest course content -->
                     </div>
@@ -182,6 +154,7 @@
         </div>
     </section>
     <!-- End latest course section -->
+
     <!-- Start testimonial -->
     <section id="mu-testimonial">
         <div class="container">
@@ -201,38 +174,6 @@
                                 </div>
                                 <div class="mu-testimonial-info">
                                     <h4>John Doe</h4>
-                                    <span>Happy Student</span>
-                                </div>
-                            </div>
-                            <!-- end testimonial single item -->
-                            <!-- start testimonial single item -->
-                            <div class="mu-testimonial-item">
-                                <div class="mu-testimonial-quote">
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque id.</p>
-                                    </blockquote>
-                                </div>
-                                <div class="mu-testimonial-img">
-                                    <img src="{{asset('assets')}}/img/testimonial-3.png" alt="img">
-                                </div>
-                                <div class="mu-testimonial-info">
-                                    <h4>Rebaca Michel</h4>
-                                    <span>Happy Parent</span>
-                                </div>
-                            </div>
-                            <!-- end testimonial single item -->
-                            <!-- start testimonial single item -->
-                            <div class="mu-testimonial-item">
-                                <div class="mu-testimonial-quote">
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum soluta aperiam blanditiis obcaecati eveniet aliquam consequatur nobis eaque id.</p>
-                                    </blockquote>
-                                </div>
-                                <div class="mu-testimonial-img">
-                                    <img src="{{asset('assets')}}/img/testimonial-2.png" alt="img">
-                                </div>
-                                <div class="mu-testimonial-info">
-                                    <h4>Stev Smith</h4>
                                     <span>Happy Student</span>
                                 </div>
                             </div>

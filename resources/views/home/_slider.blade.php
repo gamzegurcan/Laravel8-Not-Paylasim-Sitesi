@@ -13,7 +13,7 @@
             <span></span>
             <h2>We Will Help You To Learn</h2>
             <p>{!!$rs->detail!!}</p>
-            <a href="{{Storage::url($rs->file)}}" target="_blank" class="mu-read-more-btn">Read More</a>
+            <a href="{{route('note',['id'=>$rs->id])}}" class="mu-read-more-btn">Read More</a>
         </div>
     </div>
     @endforeach

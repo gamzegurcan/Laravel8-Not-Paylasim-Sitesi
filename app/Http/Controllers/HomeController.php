@@ -25,14 +25,14 @@ class HomeController extends Controller
     public function index()
     {
         $setting=Setting::first();
-        $slider= Note::select('id','title','image','detail','file')->limit(4)->inRandomOrder()->get();
+        $slider= Note::select('id','title','image','detail','file')->limit(4)->get();
         $latest= Note::select('id','title','detail','image','file')->limit(6)->orderByDesc('id')->get();
-        $notes= Note::select('id','title','image')->limit(3)->inRandomOrder()->get();
+        /*$notes= Note::select('id','title','image')->limit(3)->inRandomOrder()->get();*/
         $data= [
             'setting'=>$setting,
             'slider'=>$slider,
             'latest'=>$latest,
-            'notes'=>$notes,
+            /*'notes'=>$notes,*/
             'page'=>'home'
         ];
 
@@ -46,6 +46,23 @@ class HomeController extends Controller
         /*$reviews = \App\Models\Review::where('content_id',$id)->get();*/
 
         return view('home.note_detail',['data' => $data,'datalist' => $datalist]);
+    }
+
+    public function getnote(Request $request){
+        $search = $request->input('search');
+        $count = Note::where('title','like','%'.$search.'%')->get()->count();
+        if($count==1){
+            $data = Note::where('title','like','%'.$search.'%')->first();
+            return redirect()->route('note',['id'=>$data->id]);
+        }
+        else{
+            return redirect()->route('notelist',['search'=>$search]);
+        }
+    }
+
+    public function notelist($search){
+        $datalist = Note::where('title','like','%'.$search.'%')->get();
+        return view('home.search_notes',['search'=>$search,'datalist'=>$datalist]);
     }
 
 
