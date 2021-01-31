@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="mu-page-breadcrumb-area">
-                        <h2>Course Detail</h2>
+                        <h2>Note Detail</h2>
                         <ol class="breadcrumb">
                             <li><a href="#">Home</a></li>
                             <li class="active">Note Detail</li>
@@ -38,7 +38,7 @@
                                     <div class="row">
                                             <div class="mu-latest-course-single">
                                                 <figure class="mu-latest-course-img">
-                                                    <img src="{{Storage::url($data->image)}}" alt="img">
+                                                    <img src="{{Storage::url($data->image)}}" alt="img" height="500" width="750">
                                                 </figure>
                                                 <div class="mu-latest-course-single-content">
                                                     <h2>{{$data->title}}</h2>
@@ -57,8 +57,48 @@
                 </div>
             </div>
         </div>
+        <section id="mu-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-contact-area">
+                            <div class="mu-contact-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mu-contact-left">
+                                            @livewire('review',['id'=> $data->id])
+                                        </div>
+                                    </div>
+                                    @foreach($reviews as $rs)
+                                    <div class="col-md-6">
+                                        <div class="mu-contact-right">
+                                            <div class="comment-details">
+                                                <h4 class="comment-author">{{$rs->user->name}}</h4>
+                                                <span>{{$rs->created_at}}
+                                                    <div class="review-rating pull-right">
+                                                        <i class="fa fa-star" @if ($rs->rate<1) -o empty @endif></i>
+                                                        <i class="fa fa-star" @if ($rs->rate<2) -o empty @endif></i>
+                                                        <i class="fa fa-star" @if ($rs->rate<3) -o empty @endif></i>
+                                                        <i class="fa fa-star" @if ($rs->rate<4) -o empty @endif></i>
+                                                        <i class="fa fa-star" @if ($rs->rate<5) -o empty @endif></i>
+                                                    </div>
+                                                </span>
+                                                <p class="comment-description">
+                                                    <strong>{{$rs->subject}}</strong>
+                                                <p>{{$rs->review}}</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-
 
 
 

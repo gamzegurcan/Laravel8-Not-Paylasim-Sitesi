@@ -51,6 +51,7 @@
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{route('myprofile')}}"><i class="fa fa-user-o"></i>My Account</a></li>
+                            <li><a href="{{route('myreviews')}}"><i class="fa fa-user-o"></i>My Reviews </a></li>
                             <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i>Logout </a></li>
                         </ul>
                     </li>

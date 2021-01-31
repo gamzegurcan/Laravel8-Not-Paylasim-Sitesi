@@ -19,120 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="note detail page added">
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/css/main-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/img/user.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/bootstrap/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/bootstrap/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/bootstrap/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/dataTables/dataTables.bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/dataTables/dataTables.bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/dataTables/jquery.dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/flot/excanvas.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/flot/jquery.flot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/flot/jquery.flot.pie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/flot/jquery.flot.resize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/flot/jquery.flot.tooltip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/jquery-1.10.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/metisMenu/jquery.metisMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/morris/morris-0.4.3.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/morris/morris.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/morris/raphael-2.1.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/pace/pace-theme-big-counter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/pace/pace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/social-buttons/social-buttons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/plugins/timeline/timeline.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/scripts/dashboard-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/scripts/flot-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/scripts/morris-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/assets/scripts/siminta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/blank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/buttons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/flot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/forms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/grid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/morris.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/notifications.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/panels-wells.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/tables.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/timeline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/bs-twopage/login/typography.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/search_notes.blade.php" afterDir="false" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Jetstream livewire and search button added">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ReviewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_30_110859_create_reviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_30_111245_review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/review_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/css/main-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/img/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/bootstrap/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/bootstrap/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/dataTables/dataTables.bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/dataTables/dataTables.bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/dataTables/jquery.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/flot/excanvas.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/flot/jquery.flot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/flot/jquery.flot.pie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/flot/jquery.flot.resize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/flot/jquery.flot.tooltip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/jquery-1.10.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/metisMenu/jquery.metisMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/morris/morris-0.4.3.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/morris/morris.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/morris/raphael-2.1.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/pace/pace-theme-big-counter.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/pace/pace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/social-buttons/social-buttons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/plugins/timeline/timeline.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/scripts/dashboard-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/scripts/flot-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/scripts/morris-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/assets/scripts/siminta.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/blank.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/buttons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/flot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/forms.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/morris.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/panels-wells.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/tables.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/timeline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/bs-siminta-admin/typography.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -282,20 +184,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\home" />
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\layouts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\php\Laravel-NotPaylaşım\resources" />
       <recent name="C:\php\Laravel-NotPaylaşım\resources\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\home" />
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.Laravel-NotPaylaşım">
@@ -362,7 +264,7 @@
       <workItem from="1611912887482" duration="82000" />
       <workItem from="1611936992412" duration="4176000" />
       <workItem from="1611941510155" duration="187000" />
-      <workItem from="1611998034506" duration="6366000" />
+      <workItem from="1611998034506" duration="15786000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -476,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611940085094</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Jetstream livewire and search button added">
+      <created>1612004804389</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612004804389</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +421,8 @@
     <MESSAGE value="home page slider added and category notes page added" />
     <MESSAGE value="notes shown on the homepage" />
     <MESSAGE value="note detail page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="note detail page added" />
+    <MESSAGE value="Jetstream livewire and search button added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jetstream livewire and search button added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -559,10 +469,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611940087686">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612004811180">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611940087686" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612004811180" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
