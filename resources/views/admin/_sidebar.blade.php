@@ -27,10 +27,13 @@
             <li>
                 <a href="{{route('admin_review')}}"><i class="fa fa-user "></i>REVIEWS</a>
             </li>
-
+            <li>
+                <a href="{{route('admin_faq')}}"><i class="fa fa-question "></i>FAQ</a>
+            </li>
             <li>
                 <a href="{{route('admin_setting')}}"><i class="fa fa-edit "></i>SETTINGS</a>
             </li>
+
         </ul>
 
     </div>

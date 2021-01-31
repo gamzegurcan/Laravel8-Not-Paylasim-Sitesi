@@ -42,7 +42,7 @@
                     <li><a href="{{route('about')}}">About</a></li>
                     <li><a href="{{route('contact')}}">Contact</a></li>
                     <li><a href="{{route('references')}}">References</a></li>
-
+                    <li><a href="{{route('faq')}}">Faq</a></li>
                     <li class="dropdown">
                         @auth
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span>
