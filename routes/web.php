@@ -113,6 +113,29 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
     Route::get('/',[UserController::class, 'index'])->name('myprofile');
     Route::get('/myreviews', [UserController::class, 'myreviews'])->name('myreviews');
     Route::get('destroymyreview/{id}', [UserController::class, 'destroymyreview'])->name('user_review_delete');
+
+
+    #User Note
+    Route::prefix('note')->group(function(){
+
+        Route::get('/', [\App\Http\Controllers\NoteController::class, 'index'])->name('user_note');
+        Route::get('create', [\App\Http\Controllers\NoteController::class, 'create'])->name('user_note_add');
+        Route::post('store', [\App\Http\Controllers\NoteController::class, 'store'])->name('user_note_store');
+        Route::get('edit/{id}', [\App\Http\Controllers\NoteController::class, 'edit'])->name('user_note_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\NoteController::class, 'update'])->name('user_note_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\NoteController::class, 'destroy'])->name('user_note_delete');
+        Route::get('show', [\App\Http\Controllers\NoteController::class, 'show'])->name('user_note_show');
+
+    });
+    #User Image
+    Route::prefix('image')->group(function() {
+
+        Route::get('create/{note_id}', [\App\Http\Controllers\ImageController::class, 'create'])->name('user_image_add');
+        Route::post('store/{note_id}', [\App\Http\Controllers\ImageController::class, 'store'])->name('user_image_store');
+        Route::get('delete/{id}/{note_id}', [\App\Http\Controllers\ImageController::class, 'destroy'])->name('user_image_delete');
+        Route::get('show', [\App\Http\Controllers\ImageController::class, 'show'])->name('user_image_show');
+
+    });
 });
 
 

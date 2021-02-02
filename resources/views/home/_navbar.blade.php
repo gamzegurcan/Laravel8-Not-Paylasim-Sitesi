@@ -52,6 +52,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{route('myprofile')}}"><i class="fa fa-user-o"></i>My Account</a></li>
                             <li><a href="{{route('myreviews')}}"><i class="fa fa-user-o"></i>My Reviews </a></li>
+                            <li><a href="{{route('user_note')}}"><i class="fa fa-user-o"></i>My Notes </a></li>
                             <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i>Logout </a></li>
                         </ul>
                     </li>
@@ -64,19 +65,42 @@
                         </ul>
                     </li>
                     @endguest
-                    <li> <form class="mu-search-form" action="{{route('getnote')}}" method="post">
-                            @csrf
-                            @livewire('search')
-                            <button class="search-btn" type="submit"><i class="fa fa-search"></i> </button>
-                    </form>
-                    </li>
-                    @section('footerjs')
-                        @livewireScripts
-                    @endsection
+{{--                    <li>--}}
+{{--                        <form class="mu-search-form" action="{{route('getnote')}}" method="post">--}}
+{{--                            @csrf--}}
+{{--                            @livewire('search')--}}
+{{--                            <button class="search-btn" type="submit"><i class="fa fa-search"></i> </button>--}}
+{{--                        </form>--}}
+{{--                    </li>--}}
+
+{{--                    @section('footerjs')--}}
+{{--                        @livewireScripts--}}
+{{--                    @endsection--}}
+
+                    <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
 </section>
+<div id="mu-search">
+    <div class="mu-search-area">
+        <button class="mu-search-close"><span class="fa fa-close"></span></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="mu-search-form" action="{{route('getnote')}}" method="post">
+                        @csrf
+                        @livewire('search')
+                        <button class="search-btn" type="submit">Search </button>
+                    </form>
+                     @section('footerjs')
+                       @livewireScripts
+                     @endsection
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- End menu -->
-

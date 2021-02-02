@@ -64,30 +64,21 @@
                         <div class="mu-contact-area">
                             <div class="mu-contact-content">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-5 col-sm-6">
                                         <div class="mu-contact-left">
                                             @livewire('review',['id'=> $data->id])
                                         </div>
                                     </div>
                                     @foreach($reviews as $rs)
-                                    <div class="col-md-6">
+                                    <div class="col-md-7 col-sm-6" >
                                         <div class="mu-contact-right">
-                                            <div class="comment-details">
                                                 <h4 class="comment-author">{{$rs->user->name}}</h4>
                                                 <span>{{$rs->created_at}}
-                                                    <div class="review-rating pull-right">
-                                                        <i class="fa fa-star" @if ($rs->rate<1) -o empty @endif></i>
-                                                        <i class="fa fa-star" @if ($rs->rate<2) -o empty @endif></i>
-                                                        <i class="fa fa-star" @if ($rs->rate<3) -o empty @endif></i>
-                                                        <i class="fa fa-star" @if ($rs->rate<4) -o empty @endif></i>
-                                                        <i class="fa fa-star" @if ($rs->rate<5) -o empty @endif></i>
-                                                    </div>
                                                 </span>
                                                 <p class="comment-description">
                                                     <strong>{{$rs->subject}}</strong>
                                                 <p>{{$rs->review}}</p>
                                                 </p>
-                                            </div>
                                         </div>
                                     </div>
                                     @endforeach

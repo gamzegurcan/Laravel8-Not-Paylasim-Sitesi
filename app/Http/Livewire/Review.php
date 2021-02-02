@@ -23,7 +23,6 @@ class Review extends Component
     private function resetInput(){
         $this->subject = null;
         $this->review = null;
-        $this->rate = null;
         $this->note_id=null;
         $this->IP = null;
     }
@@ -33,7 +32,7 @@ class Review extends Component
         $this->validate([
                 'subject' => 'required|min:5',
                 'review' => 'required|min:10',
-                'rate' => 'required'
+
            ]);
 
        \App\Models\Review::create([
@@ -42,7 +41,7 @@ class Review extends Component
                'IP' => $_SERVER['REMOTE_ADDR'],
                'subject' => $this->subject,
                'review' => $this->review,
-               'rate' => $this->rate
+
 
        ]);
 

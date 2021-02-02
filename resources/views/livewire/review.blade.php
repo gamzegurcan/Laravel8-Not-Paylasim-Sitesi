@@ -1,6 +1,8 @@
 <div>
     <h2>Write Your Review</h2>
     <p></p>
+    <p></p>
+    <p></p>
     @if (session()->has('message'))
         <div class="alert alert-success">
             {{session('message')}}
@@ -20,13 +22,13 @@
             </div>
             <div class="col-md-12 mb-3">
                 <div class="form-group">
-                    <label for="textMessage">Review</label>
-                    <textarea  wire:model="review" class="form-control" placeholder="Comment**"  cols="45"
+                    <label for="textMessage">Comment</label>
+                    <textarea  wire:model="review" class="form-control" placeholder="Your comment..."  cols="45"
                                rows="8" required></textarea>
                     @error('review')<span class="text-danger">{{$message}}</span>@enderror
                 </div>
             </div>
-            <div class="form-group">
+            {{--<div class="form-group">
                 <div class="input-rating">
                     @error('rate')<span class="text-danger">{{$message}}</span>@enderror
                     <strong class="text-uppercase">Your Rating:</strong>
@@ -39,10 +41,10 @@
                         <input type="radio" id="fa fa-star5" wire:model="rate" value="1" /><label for="fa fa-star5"></label>
                     </div>
                 </div>
-            </div>
+            </div>--}}
         </div>
         @auth
-            <input type="submit" class="btn btn-success" value="Save"/>
+            <input type="submit" class="mu-post-btn" value="Save"/>
         @else
             <a href="/login" class="btn btn-a">For submit Review Login</a>
         @endauth

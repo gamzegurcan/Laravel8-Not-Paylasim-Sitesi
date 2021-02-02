@@ -35,7 +35,6 @@
                                 <th rowspan="1" colspan="1">Review</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Date</th>
-                                <th rowspan="1" colspan="1">Rate</th>
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
                             </thead>
@@ -55,7 +54,6 @@
                                 <td class=" ">{{$rs -> review}}</td>
                                 <td class=" ">{{$rs -> status}}</td>
                                 <td class=" ">{{$rs -> created_at}}</td>
-                                <td class=" ">{{$rs -> rate}}</td>
 
                                 <td class="center "><a href="{{route('admin_review_show',['id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">Edit</a></td>
                                 <td class="center "><a href="{{route('admin_review_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')">Delete</a></td>

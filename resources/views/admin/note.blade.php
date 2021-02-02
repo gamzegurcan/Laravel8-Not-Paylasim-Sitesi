@@ -16,8 +16,6 @@
                 <div class="card-header">
                     <a class="btn btn-block btn-info" type="button" style="width:200px" href="{{route('admin_note_add')}}">Add</a>
                 </div>
-
-
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
