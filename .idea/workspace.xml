@@ -19,26 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Laravel User Product (CRUD) Üye Urun Yönetim">
-      <change afterPath="$PROJECT_DIR$/public/assets/img/about-us.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/counter-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/notes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/testimonial-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/testimonial-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/testimonial-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/testimonial-bg.png" afterDir="false" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Homepage içerik düzenlemeleri">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_095624_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_112418_roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_112815_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_113702_role_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/Varsity/assets/img/aboutus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/faq.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/faq.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/references.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_note.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +268,7 @@
       <workItem from="1612100751192" duration="1783000" />
       <workItem from="1612205036835" duration="909000" />
       <workItem from="1612258233322" duration="14233000" />
-      <workItem from="1612338233618" duration="7165000" />
+      <workItem from="1612338233618" duration="14803000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -414,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612271966802</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Homepage içerik düzenlemeleri">
+      <created>1612345627167</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612345627167</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +457,8 @@
     <MESSAGE value="Reviews with Jetstream Livewire and Manage at User and Admin Panel" />
     <MESSAGE value="Frequently asked questions page added" />
     <MESSAGE value="Laravel User Product (CRUD) Üye Urun Yönetim" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel User Product (CRUD) Üye Urun Yönetim" />
+    <MESSAGE value="Homepage içerik düzenlemeleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homepage içerik düzenlemeleri" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -473,6 +477,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1609089254583" />
+    <state x="428" y="87" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612353903663">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="428" y="87" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1612353903663" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610202015445">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -501,10 +509,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612271971682">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612345632049">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612271971682" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612345632049" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
