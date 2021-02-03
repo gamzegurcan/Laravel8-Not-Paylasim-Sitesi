@@ -7,32 +7,17 @@
         <div class="container">
             <div class="mu-footer-top-area">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="mu-footer-widget">
                             <h4>Information</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="">Features</a></li>
-                                <li><a href="">Course</a></li>
-                                <li><a href="">Event</a></li>
-                                <li><a href="">Sitemap</a></li>
-                                <li><a href="">Term Of Use</a></li>
+                                <li><a href="{{route('about')}}">About Us</a></li>
+                                <li><a href="{{route('references')}}">References</a></li>
+                                <li><a href="{{route('faq')}}">Frequency Ask Questions</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="mu-footer-widget">
-                            <h4>Student Help</h4>
-                            <ul>
-                                <li><a href="">Get Started</a></li>
-                                <li><a href="#">My Questions</a></li>
-                                <li><a href="">Download Files</a></li>
-                                <li><a href="">Latest Course</a></li>
-                                <li><a href="">Academic News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="mu-footer-widget">
                             <h4>Contact</h4>
                             <address>

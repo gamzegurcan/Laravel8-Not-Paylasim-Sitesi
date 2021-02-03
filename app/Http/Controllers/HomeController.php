@@ -28,12 +28,14 @@ class HomeController extends Controller
         $setting=Setting::first();
         $slider= Note::select('id','title','image','detail','file')->limit(4)->get();
         $latest= Note::select('id','title','detail','image','file')->limit(6)->orderByDesc('id')->get();
-        /*$notes= Note::select('id','title','image')->limit(3)->inRandomOrder()->get();*/
+        $messages= Message::select('id','name','subject','message')->limit(3)->inRandomOrder()->get();
+        $note= Note::select('id','title','detail','image')->limit(4)->inRandomOrder()->get();
         $data= [
             'setting'=>$setting,
             'slider'=>$slider,
             'latest'=>$latest,
-            /*'notes'=>$notes,*/
+            'messages'=>$messages,
+            'note'=>$note,
             'page'=>'home'
         ];
 

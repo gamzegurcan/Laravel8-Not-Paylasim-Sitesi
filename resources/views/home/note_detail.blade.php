@@ -18,7 +18,7 @@
                     <div class="mu-page-breadcrumb-area">
                         <h2>Note Detail</h2>
                         <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="{{route('home')}}">Home</a></li>
                             <li class="active">Note Detail</li>
                         </ol>
                     </div>
