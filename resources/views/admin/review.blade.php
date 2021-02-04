@@ -45,7 +45,10 @@
                             <tr class="gradeU odd">
                                 <td class="">{{$rs -> id}}</td>
                                 <td>
-                                    {{$rs -> user->name}}
+                                    <a href="{{route('admin_user_show', ['id' => $rs->user->id])}}",
+                                       onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">
+                                        {{$rs ->user->name}}
+                                    </a>
                                 </td>
                                 <td>
                                     <a href="{{route('note',['id'=> $rs->note->id])}}" target="_blank">{{$rs->note->title}}</a>

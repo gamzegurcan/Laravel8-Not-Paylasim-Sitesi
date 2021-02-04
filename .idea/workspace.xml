@@ -19,12 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Admin panel user role management">
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="image gallery added for note detail page">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_note_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_note_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +262,7 @@
       <workItem from="1612360337522" duration="3149000" />
       <workItem from="1612377748928" duration="51000" />
       <workItem from="1612427740985" duration="12448000" />
-      <workItem from="1612457448685" duration="4649000" />
+      <workItem from="1612457448685" duration="5767000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -425,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612440842624</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="image gallery added for note detail page">
+      <created>1612463207538</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1612463207538</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +475,8 @@
     <MESSAGE value="Homepage içerik düzenlemeleri" />
     <MESSAGE value="User Admin role permission" />
     <MESSAGE value="Admin panel user role management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin panel user role management" />
+    <MESSAGE value="image gallery added for note detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="image gallery added for note detail page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -515,18 +523,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1611743258836" />
-    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1612432756157">
+    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1612463690602">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612432756157" />
+    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612463690602" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1608386665356">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612440846881">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612463220373">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612440846881" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612463220373" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
