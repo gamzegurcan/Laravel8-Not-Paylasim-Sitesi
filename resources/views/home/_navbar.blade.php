@@ -61,7 +61,7 @@
                             @if($userRoles->contains('admin'))
                                 <li><a href="{{route('admin_home')}}" target="_blank"><i class="fa fa-user"></i>    Admin Panel</a></li>
                             @endif--}}
-                            <li><a href="{{route('logout')}}">Logout         <i class="fa fa-sign-out"></i> </a></li>
+                            <li><a href="{{route('logout')}}">Logout  <i class="fa fa-sign-out"></i> </a></li>
                         </ul>
                     </li>
                     @guest
@@ -73,17 +73,17 @@
                         </ul>
                     </li>
                     @endguest
-{{--                    <li>--}}
-{{--                        <form class="mu-search-form" action="{{route('getnote')}}" method="post">--}}
-{{--                            @csrf--}}
-{{--                            @livewire('search')--}}
-{{--                            <button class="search-btn" type="submit"><i class="fa fa-search"></i> </button>--}}
-{{--                        </form>--}}
-{{--                    </li>--}}
+                    {{--<li>
+                        <form class="mu-search-form" action="{{route('getnote')}}" method="post">
+                            @csrf
+                            @livewire('search')
+                            <button class="search-btn" type="submit"><i class="fa fa-search"></i> </button>
+                        </form>
+                    </li>
 
-{{--                    @section('footerjs')--}}
-{{--                        @livewireScripts--}}
-{{--                    @endsection--}}
+                    @section('footerjs')
+                        @livewireScripts
+                    @endsection--}}
 
                     <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
 

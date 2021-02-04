@@ -45,10 +45,12 @@ class HomeController extends Controller
     public function note($id){
 
         $data = Note::find($id);
-        $datalist = Image::where('note_id',$id)->get();
+        $image = \App\Models\Image::where('note_id',$id)->get();
         $reviews = \App\Models\Review::where('note_id',$id)->get();
 
-        return view('home.note_detail',['data' => $data,'datalist' => $datalist,'reviews' =>$reviews]);
+
+
+        return view('home.note_detail',['data' => $data,'image' => $image,'reviews' =>$reviews]);
     }
 
     public function getnote(Request $request){

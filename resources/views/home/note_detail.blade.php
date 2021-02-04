@@ -37,9 +37,17 @@
                                 <div class="mu-course-container mu-course-details">
                                     <div class="row">
                                             <div class="mu-latest-course-single">
-                                                <figure class="mu-latest-course-img">
-                                                    <img src="{{Storage::url($data->image)}}" alt="img" height="500" width="750">
-                                                </figure>
+                                                <section id="mu-slider">
+                                                @foreach($image as $rs)
+                                                    <div class="mu-slider-single">
+                                                        <div class="mu-slider-img">
+                                                            <figure>
+                                                                <img src="{{Storage::url($rs->image)}}" alt="img" height="300" width="200">
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                                </section>
                                                 <div class="mu-latest-course-single-content">
                                                     <h2>{{$data->title}}</h2>
                                                     <h4>Description</h4>
