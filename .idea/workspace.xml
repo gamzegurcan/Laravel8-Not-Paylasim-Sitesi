@@ -19,21 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="Homepage içerik düzenlemeleri">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_095624_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_112418_roles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_112815_create_role_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_113702_role_user.php" afterDir="false" />
+    <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="User Admin role permission">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/assets/images/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_roles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_note.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,20 +179,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\home" />
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
-      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\layouts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\php\Laravel-NotPaylaşım\resources" />
       <recent name="C:\php\Laravel-NotPaylaşım\resources\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\admin" />
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\home" />
+      <recent name="C:\php\Laravel-NotPaylaşım\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.Laravel-NotPaylaşım">
@@ -268,7 +264,10 @@
       <workItem from="1612100751192" duration="1783000" />
       <workItem from="1612205036835" duration="909000" />
       <workItem from="1612258233322" duration="14233000" />
-      <workItem from="1612338233618" duration="14803000" />
+      <workItem from="1612338233618" duration="14970000" />
+      <workItem from="1612360337522" duration="3149000" />
+      <workItem from="1612377748928" duration="51000" />
+      <workItem from="1612427740985" duration="11715000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -417,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612345627167</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="User Admin role permission">
+      <created>1612356009994</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1612356009994</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +464,8 @@
     <MESSAGE value="Frequently asked questions page added" />
     <MESSAGE value="Laravel User Product (CRUD) Üye Urun Yönetim" />
     <MESSAGE value="Homepage içerik düzenlemeleri" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homepage içerik düzenlemeleri" />
+    <MESSAGE value="User Admin role permission" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Admin role permission" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1609495447940">
@@ -485,10 +492,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1610202015445" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612262741387">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612431755406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612262741387" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612431755406" />
+    <state x="463" y="290" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1612431388399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="290" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1366.728@0.0.1366.728" timestamp="1612431388399" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608386007333">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -501,18 +512,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1611743258836" />
-    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1612002810207">
+    <state x="859" y="287" key="NewPhpFileDialog" timestamp="1612432756157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612002810207" />
+    <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612432756157" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1608386665356">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608386665356" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612345632049">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612356012602">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612345632049" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612356012602" />
     <state x="555" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1609006304529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

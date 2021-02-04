@@ -55,8 +55,8 @@
                                 <td class=" ">{{$rs -> status}}</td>
                                 <td class=" ">{{$rs -> created_at}}</td>
 
-                                <td class="center "><a href="{{route('admin_review_show',['id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')">Edit</a></td>
-                                <td class="center "><a href="{{route('admin_review_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')">Delete</a></td>
+                                <td class="center "><a href="{{route('admin_review_show',['id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')"><img src="{{asset('assets')}}/admin/assets/images/editicon.png" height="25"></a></td>
+                                <td class="center "><a href="{{route('admin_review_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')"><img src="{{asset('assets')}}/admin/assets/images/deleteicon.png" height="25"></a></td>
                             </tr>
 
                             @endforeach

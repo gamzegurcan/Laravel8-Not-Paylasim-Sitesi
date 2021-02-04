@@ -50,18 +50,26 @@
                         @endauth
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{route('myprofile')}}"><i class="fa fa-user-o"></i>My Account</a></li>
-                            <li><a href="{{route('myreviews')}}"><i class="fa fa-user-o"></i>My Reviews </a></li>
-                            <li><a href="{{route('user_note')}}"><i class="fa fa-user-o"></i>My Notes </a></li>
-                            <li><a href="{{route('logout')}}"><i class="fa fa-user-o"></i>Logout </a></li>
+                            <li><a href="{{route('myprofile')}}"><i class="fa fa-user"></i>    My Account</a></li>
+                            <li><a href="{{route('myreviews')}}"><i class="fa fa-user"></i>    My Reviews </a></li>
+                            <li><a href="{{route('user_note')}}"><i class="fa fa-user"></i>    My Notes </a></li>
+                            {{--@php
+
+                                $userRoles = Auth::user()->roles->pluck('name');
+
+                            @endphp
+                            @if($userRoles->contains('admin'))
+                                <li><a href="{{route('admin_home')}}" target="_blank"><i class="fa fa-user"></i>    Admin Panel</a></li>
+                            @endif--}}
+                            <li><a href="{{route('logout')}}">Logout         <i class="fa fa-sign-out"></i> </a></li>
                         </ul>
                     </li>
                     @guest
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/register">Join</a></li>
+                            <li><a href="/login">Login  <i class="fa fa-sign-in"></i></a></li>
+                            <li><a href="/register">Join  <i class="fa fa-user"></i></a></li>
                         </ul>
                     </li>
                     @endguest

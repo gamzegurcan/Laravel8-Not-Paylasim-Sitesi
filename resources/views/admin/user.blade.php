@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin Panel HomePage')
+@section('title', 'User List')
 
 @section('content')
 
@@ -8,16 +8,9 @@
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>CATEGORIES</h2>
+                    <h2>USERS</h2>
 
                 </div>
-            </div>
-            <div class="col-md-12">
-                <div class="card-header">
-                    <a class="btn btn-block btn-info" type="button" style="width:200px" href="{{route('admin_category_add')}}">Add</a>
-                </div>
-
-
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
@@ -32,9 +25,11 @@
                             <thead>
                             <tr>
                                 <th rowspan="1" colspan="1">Id</th>
-                                <th rowspan="1" colspan="1">Parent</th>
-                                <th rowspan="1" colspan="1">Title</th>
-                                <th rowspan="1" colspan="1">Status</th>
+                                <th rowspan="1" colspan="1">Photo</th>
+                                <th rowspan="1" colspan="1">Name</th>
+                                <th rowspan="1" colspan="1">Email</th>
+                                <th rowspan="1" colspan="1">Phone</th>
+                                <th rowspan="1" colspan="1">Roles</th>
                                 <th rowspan="1" colspan="1">Edit</th>
                                 <th rowspan="1" colspan="1">Delete</th></tr>
                             </thead>
@@ -43,16 +38,24 @@
                                 <p></p>
 
                             <tr class="gradeU odd">
-                                <td class="">{{$rs -> id}}</td>
+                                <td class="sorting_1">{{$rs -> id}}</td>
                                 <td>
-                                    {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}
+                                    @if($rs->profile_photo_path)
+                                        <img src="{{Storage::url($rs->profile_photo_path)}}" height="50" style="border-radius: 10px" alt="">
+                                    @endif
                                 </td>
-                                <td class="sorting_1">{{$rs -> title}}</td>
-                                <td class=" ">{{$rs -> status}}</td>
-                                <td class="center "><a href="{{route('admin_category_edit',['id' => $rs->id])}}"><img src="{{asset('assets')}}/admin/assets/images/editicon.png" height="25"></a></td>
-                                <td class="center "><a href="{{route('admin_category_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')"><img src="{{asset('assets')}}/admin/assets/images/deleteicon.png" height="25"></a></td>
+                                <td class="sorting_1">{{$rs ->name}}</td>
+                                <td class="sorting_1">{{$rs -> email}}</td>
+                                <td class=" ">{{$rs -> phone}}</td>
+                                <td>
+                                    @foreach($rs->roles as $row)
+                                        {{ $row-> name }},
+                                    @endforeach
+                                        <a href="{{route('admin_user_roles',['id' => $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100, height=700')"><img src="{{asset('assets')}}/admin/assets/images/plus.png" height="20"></a>
+                                </td>
+                                <td class="center "><a href="{{route('admin_user_edit',['id' => $rs->id])}}"><img src="{{asset('assets')}}/admin/assets/images/editicon.png" height="25"></a></td>
+                                <td class="center "><a href="{{route('admin_user_delete',['id' => $rs->id])}}" onclick="return confirm('Are you sure?')"><img src="{{asset('assets')}}/admin/assets/images/deleteicon.png" height="25"></a></td>
                             </tr>
-
                             @endforeach
                             </tbody>
                         </table>
