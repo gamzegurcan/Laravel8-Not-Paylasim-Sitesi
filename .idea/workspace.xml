@@ -20,11 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f33b37c-02ec-4625-a198-141aa182feb8" name="Default Changelist" comment="image gallery added for note detail page">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Note.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Note.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/note_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/category_notes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/category_notes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/note_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/references.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_note.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_note_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_note_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_note_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_note_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_review.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,6 +278,7 @@
       <workItem from="1612377748928" duration="51000" />
       <workItem from="1612427740985" duration="12448000" />
       <workItem from="1612457448685" duration="5767000" />
+      <workItem from="1612957311171" duration="13156000" />
     </task>
     <task id="LOCAL-00001" summary="index.blade changed&#10;home.blade changed&#10;add other pieces">
       <created>1608394501077</created>
@@ -438,6 +454,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -511,6 +537,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="290" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1366.728@0.0.1366.728" timestamp="1612431388399" />
+    <state x="128" y="73" width="1092" height="610" key="DiffContextDialog" timestamp="1612961711768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="128" y="73" width="1092" height="610" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1612961711768" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608386007333">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -527,6 +557,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="859" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612463690602" />
+    <state x="519" y="84" key="RollbackChangesDialog" timestamp="1612958132933">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="519" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612958132933" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1608386665356">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

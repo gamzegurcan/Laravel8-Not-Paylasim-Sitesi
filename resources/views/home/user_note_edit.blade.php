@@ -41,7 +41,7 @@
                                         <p></p>
                                         <p></p>
                                         <p></p>
-                                        <label>Category</label>
+                                        <label>Faculty-Department</label>
                                         <select class="form-control" name="category_id">
                                             @foreach($datalist as $rs)
                                                 <option value="{{$rs -> id}}" @if ($rs->id==$data->parent_id) selected="selected" @endif >
@@ -51,7 +51,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label>Title</label>
+                                        <label>Lesson</label>
                                         <input type="text" name="title" value="{{$data->title}}" class="form-control">
                                     </div>
                                     <div class="form-group">
@@ -91,16 +91,14 @@
                                             CKEDITOR.replace( 'detail' );
                                         </script>
                                     </div>
-                                    <div class="form-group">
+                                    {{--<div class="form-group">
                                         <label>User</label>
                                         <input type="number" name="user" value="{{$data->user}}" class="form-control">
-                                    </div>
+                                    </div>--}}
                                     <div class="form-group">
                                         <label>Status</label>
                                         <select class="form-control" name="status">
                                             <option selected="selected">{{$data->status}}</option>
-                                            <option>True</option>
-                                            <option>False</option>
                                         </select>
                                     </div>
                                 </div><!-- /.box-body -->

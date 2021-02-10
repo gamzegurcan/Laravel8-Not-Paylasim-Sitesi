@@ -66,7 +66,7 @@
                     </li>
                     @guest
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<span class="fa fa-angle-down"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login / Join<span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/login">Login  <i class="fa fa-sign-in"></i></a></li>
                             <li><a href="/register">Join  <i class="fa fa-user"></i></a></li>

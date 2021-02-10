@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 
-@section('title', )
+@section('title', $data->title .' Note Detail')
 
 @section('description')
 
@@ -52,7 +52,7 @@
                                                     <h2>{{$data->title}}</h2>
                                                     <h4>Description</h4>
                                                     <p>{!! $data->detail !!}</p>
-                                                    <h3><a href="{{Storage::url($data->file)}}" target="_blank"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="50">Tıklayınız</a></h3>
+                                                    <h4><a href="{{Storage::url($data->file)}}" target="_blank"><img src="{{asset('assets')}}/admin/assets/images/pdf.png" height="50">Tıklayınız</a></h4>
 
                                                 </div>
                                             </div>

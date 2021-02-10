@@ -3,7 +3,7 @@
     $setting = \App\Http\Controllers\HomeController::getsetting()
 @endphp--}}
 
-@section('title', 'About Us -', $setting->title )
+@section('title', 'References - '. $setting->title )
 
 @section('description')
 {{$setting->description}}

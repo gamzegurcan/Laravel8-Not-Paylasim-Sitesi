@@ -13,7 +13,7 @@ class NoteController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * @param  \App\Models\Note  $note
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -62,7 +62,7 @@ class NoteController extends Controller
         if($request->file('file')!=null){
             $data->file = storage::putfile('files',$request->file('file'));
         }
-        $data->user_id = Auth::id();
+       $data->user_id = Auth::id();
 
 
         $data->save();
@@ -122,7 +122,7 @@ class NoteController extends Controller
         }
 
         $data->save();
-        return redirect() -> route('user_note')->with('success','Note Added Successfully!');
+        return redirect() -> route('user_note')->with('success','Note Updated Successfully!');
     }
 
     /**

@@ -113,7 +113,7 @@ class NoteController extends Controller
         $data->status = $request->input('status');
         $data->category_id = $request->input('category_id');
         $data->detail = $request->input('detail');
-        $data->user_id = Auth::id();
+        /*$data->user_id = Auth::id();*/
 
         if($request->file('image')!= null) {
             $data->image = Storage::putFile('images', $request->file('image'));

@@ -26,7 +26,7 @@
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
-                                <label>Category</label>
+                                <label>Faculty-Department</label>
                                 <select class="form-control" name="category_id">
                                     @foreach($datalist as $rs)
                                         <option value="{{$rs -> id}}">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
@@ -34,7 +34,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Title</label>
+                                <label>Lesson</label>
                                 <input type="text" name="title" class="form-control">
                             </div>
                             <div class="form-group">

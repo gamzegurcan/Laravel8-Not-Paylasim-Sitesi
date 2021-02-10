@@ -26,7 +26,7 @@
                         @csrf
                         <div class="box-body">
                             <div class="form-group">
-                                <label>Category</label>
+                                <label>Faculty-Department</label>
                                 <select class="form-control" name="category_id">
                                     @foreach($datalist as $rs)
                                         <option value="{{$rs -> id}}" @if ($rs->id==$data->parent_id) selected="selected" @endif >
@@ -36,7 +36,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Title</label>
+                                <label>Lesson</label>
                                 <input type="text" name="title" value="{{$data->title}}" class="form-control">
                             </div>
                             <div class="form-group">

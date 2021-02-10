@@ -7,10 +7,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="mu-page-breadcrumb-area">
-                        <h2>Contact</h2>
+                        <h2>My Reviews</h2>
                         <ol class="breadcrumb">
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li class="active">User Review</li>
+                            <li class="active">User Reviews</li>
                         </ol>
                     </div>
                 </div>
@@ -34,8 +34,7 @@
                                             <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">
                                                 <thead>
                                                 <tr>
-                                                    <th rowspan="1" colspan="1">Id</th>
-                                                    <th rowspan="1" colspan="1">Content</th>
+                                                    <th rowspan="1" colspan="1">Note</th>
                                                     <th rowspan="1" colspan="1">Subject</th>
                                                     <th rowspan="1" colspan="1">Review</th>
                                                     <th rowspan="1" colspan="1">Status</th>
@@ -47,7 +46,6 @@
                                                     <p></p>
 
                                                     <tr class="gradeU odd">
-                                                        <td class="">{{$rs -> id}}</td>
                                                         <td>
                                                             <a href="{{route('note',['id'=> $rs->note->id])}}" target="_blank">{{$rs->note->title}}</a>
                                                         </td>

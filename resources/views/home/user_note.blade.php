@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="mu-page-breadcrumb-area">
-                        <h2>Contact</h2>
+                        <h2>My Notes</h2>
                         <ol class="breadcrumb">
                             <li><a href="{{route('home')}}">Home</a></li>
                             <li class="active">User Note</li>
@@ -37,14 +37,13 @@
                                             <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">
                                                 <thead>
                                                 <tr>
-                                                    <th rowspan="1" colspan="1">Id</th>
-                                                    <th rowspan="1" colspan="1">Category</th>
-                                                    <th rowspan="1" colspan="1">Title</th>
+                                                    <th rowspan="1" colspan="1">Faculty-Department</th>
+                                                    <th rowspan="1" colspan="1">Lesson</th>
                                                     <th rowspan="1" colspan="1">User</th>
                                                     <th rowspan="1" colspan="1">Status</th>
                                                     <th rowspan="1" colspan="1">Image</th>
                                                     <th rowspan="1" colspan="1">Image Gallery</th>
-                                                    <th rowspan="1" colspan="1">File</th>
+                                                    <th rowspan="1" colspan="1">File(pdf)</th>
                                                     <th rowspan="1" colspan="1">Edit</th>
                                                     <th rowspan="1" colspan="1">Delete</th></tr>
                                                 </thead>
@@ -53,7 +52,6 @@
                                                     <p></p>
 
                                                     <tr class="gradeU odd">
-                                                        <td class="">{{$rs -> id}}</td>
                                                         <td>
                                                             {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}
                                                         </td>

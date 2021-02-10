@@ -30,8 +30,8 @@
                             <thead>
                             <tr>
                                 <th rowspan="1" colspan="1">Id</th>
-                                <th rowspan="1" colspan="1">Category</th>
-                                <th rowspan="1" colspan="1">Title</th>
+                                <th rowspan="1" colspan="1">Faculty-Department</th>
+                                <th rowspan="1" colspan="1">Lesson</th>
                                 <th rowspan="1" colspan="1">User</th>
                                 <th rowspan="1" colspan="1">Status</th>
                                 <th rowspan="1" colspan="1">Image</th>
